@@ -3,6 +3,7 @@
 import os
 import sqlite3
 from sqlite3 import Error
+import pandas as pd
 
 def create_connection(path):
     """Open a connection to an existing database or create a new one, if needed.
@@ -16,6 +17,16 @@ def create_connection(path):
     except Error as e:
         print(f"The error '{e}' occurred")
     return connection
+
+def read_query(connection, sql_query):
+    """Execute a SQL query on the given connection.
+    :param connection: the connection object
+    :param sql_query: the SQL query.
+    :return: a pandas dataframe.
+    """
+    df = pd.read_sql_query(sql_query, connection)
+    return df
+
 
 def execute_query(connection, query, commit = True):
     """Execute a query or other SQL-statement on the given connection.
