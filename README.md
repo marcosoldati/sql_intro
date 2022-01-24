@@ -18,7 +18,7 @@ Installation:
 1. Terminal öffnen
 2. `cd <kursverzeichnis>`
 3. `git clone git@github.com:marcosoldati/sql_intro.git`
-4. `<kursverzeichnis>/sqlintro_1.ipynb` öffnen
+4. `<kursverzeichnis>/sqlintro_1.ipynb` in Anaconda öffnen.
 
 ### Deepnote.com
 
@@ -34,3 +34,8 @@ Nun musss requirements.txt so eingerichtet werden, damit alle Bibliotheken gelad
 5. Links die Terminals öffnen und mit + ein neues Terminal erstellen
 6. `ln -s sql_intro/requirements.txt requirements.txt`
 7. In "Environment" Machine neu starten. 
+
+
+## Kursvorbereitung
+Bearbeite vor den Kurs die Dateien sqlintro_1.ipynb und sqlintro_2.ipynb.
+
